@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        'premier-red': '#ED1D25',
+        'premier-red-dark': '#C91A21',
       },
       fontFamily: {
         sans: ['Urbanist', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
