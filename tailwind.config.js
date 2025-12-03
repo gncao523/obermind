@@ -12,10 +12,7 @@ export default {
         'premier-red-darker': '#7F1D1D', // Even darker for gradient end
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Urbanist', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
     },
   },

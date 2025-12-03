@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Urbanist';
+  src: url('./assets/fonts/Urbanist-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   * {
     @apply box-border;
@@ -7,7 +15,7 @@
 
   body {
     @apply m-0 min-h-screen antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Urbanist', system-ui, -apple-system, sans-serif;
   }
 
   html {
