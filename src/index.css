@@ -43,3 +43,11 @@
     @apply m-0 min-h-screen antialiased;
   }
 }
+
+@layer utilities {
+  .card-group:hover svg {
+    fill: rgb(255, 255, 255);
+    background-color: rgb(252, 27, 27);
+    border-radius: 100%;
+  }
+}
