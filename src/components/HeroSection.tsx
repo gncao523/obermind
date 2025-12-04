@@ -39,7 +39,12 @@ const HeroSection: React.FC = () => {
 
       {/* Curved bottom edge */}
       <div className="absolute bottom-[-10px] left-0 w-full z-10">
-        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Mobile SVG */}
+        <svg className="md:hidden" viewBox="0 0 1400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 29.575C0 29.575 611 0 925.5 0C1240 0 1440 35.5632 1440 35.5632V182H0V29.575Z" fill="white" />
+        </svg>
+        {/* Desktop SVG */}
+        <svg className="hidden md:block" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 29.575C0 29.575 611 0 925.5 0C1240 0 1440 35.5632 1440 35.5632V182H0V29.575Z" fill="white" />
         </svg>
       </div>
