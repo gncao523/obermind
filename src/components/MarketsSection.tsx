@@ -113,7 +113,7 @@ const MarketsSection: React.FC = () => {
                                 <div className="text-premier-red mb-4">{card.icon}</div>
                                 <h3 className="text-xl font-['Gilroy'] text-black mb-3">{card.title}</h3>
                                 <div className="border-b border-gray-300 mb-3"></div>
-                                <p className="text-gray-700 text-sm leading-relaxed font-['UrbanistRegular']">{card.description}</p>
+                                <p className="text-['#1F1F1F'] text-sm leading-relaxed font-['UrbanistRegular']">{card.description}</p>
                             </div>
                             <div className="absolute bottom-8 left-8">
                                 <svg width="39" height="39" viewBox="0 0 39 39" fill="white" xmlns="http://www.w3.org/2000/svg">
