@@ -9,6 +9,7 @@ import WithdrawSection from '../components/WithdrawSection'
 import TrustSection from '../components/TrustSection'
 import TradeSection from '../components/TradeSection'
 import PremierSection from '../components/PremierSection'
+import GetStartedSection from '../components/GetStartedSection'
 
 const HomePage: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage: React.FC = () => {
       <WithdrawSection />
       <TradeSection />
       <PremierSection />
+      <GetStartedSection />
     </div>
   )
 }

@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     icon: "headphone"
   },
   {
-    text: "Premier works well for me. KYC was fast and support people (Thx milos!!) helped me right away when I had a question. I was able to deposit and start trading in same day. Withdrawal came to my bank after 2 days. All smooth",
+    text: "Premier works well for me. KYC was fast and support people (Thx milos!!) 🤗 helped me right away when I had a question. I was able to deposit and start trading in same day. Withdrawal came to my bank after 2 days. All smooth.",
     name: "Lucas Vermeer",
     initials: "LV",
     icon: "headphone"
@@ -47,7 +47,7 @@ const testimonials: Testimonial[] = [
     icon: "mail"
   },
   {
-    text: "My experince with PM is perfect so far. Payouts come same day few hours max. Works good with both crypto and credit card. You can take money out many times per day and no hidden fees Spreads are ok too 😊",
+    text: "My experince with PM is perfect so far. Payouts come same day few hours max. Works good with both crypto and credit card. You can take money out many times per day and no hidden fees. Spreads are ok too 😊",
     name: "Marco Lazzari",
     initials: "ML",
     icon: "globe"
@@ -100,25 +100,25 @@ const PremierSection: React.FC = () => {
 
   return (
     <section className="relative">
-      <img src={sectionBg} alt="premier" className="absolute top-0 left-0 w-full h-400 object-cover z-0" />
+      <img src={sectionBg} alt="premier" className="absolute top-0 left-0 w-full h-343 object-cover z-0" />
       <div className="relative top-0 max-w-7xl mx-auto py-20 px-8 z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-['Gilroy'] text-black mb-4">
-            What <span className="text-[#FC1B1B]">Premier</span> Traders are saying about us
+            What <span className="text-[#FC1B1B]">Premier</span> Traders <br/> are saying about us
           </h2>
           <p className="text-base lg:text-lg text-[#737373] font-['UrbanistRegular'] mb-6">
-            Join a growing community of professionals who rely on our platform to trade smarter every day.
+            Join a growing community of professionals who rely on our platform to<br/> trade smarter every day.
           </p>
           
           {/* Navigation Arrows */}
           <div className="flex justify-center gap-4">
-            <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors">
+            <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.5 9L4.5 6L7.5 3" stroke="#737373" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </button>
-            <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors">
+            <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.5 9L7.5 6L4.5 3" stroke="#737373" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -127,34 +127,42 @@ const PremierSection: React.FC = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow"
+              className="rounded-2xl p-[1px]"
             >
-              {/* Testimonial Text */}
-              <p className="text-sm text-[#252B42] mb-6 font-['UrbanistRegular'] leading-relaxed">
-                {testimonial.text}
-              </p>
-              
-              {/* Customer Info */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  {/* Avatar */}
-                  <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
-                    <span className="text-white text-sm font-['Gilroy']">
-                      {testimonial.initials}
+              <div className="bg-white rounded-2xl p-6 border border-[#FFC4C6]">
+                {/* Testimonial Text */}
+                <p 
+                  className="text-sm text-black mb-6 font-['UrbanistRegular'] leading-relaxed pb-6"
+                  style={{
+                    borderBottom: '1px solid',
+                    borderImage: 'linear-gradient(to right, #FFC4C6, #FFC8CA) 1'
+                  }}
+                >
+                  {testimonial.text}
+                </p>
+                
+                {/* Customer Info */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    {/* Avatar */}
+                    <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
+                      <span className="text-white text-sm font-['Gilroy']">
+                        {testimonial.initials}
+                      </span>
+                    </div>
+                    {/* Name */}
+                    <span className="text-sm font-['Gilroy'] text-black">
+                      {testimonial.name}
                     </span>
                   </div>
-                  {/* Name */}
-                  <span className="text-sm font-['Gilroy'] text-black">
-                    {testimonial.name}
-                  </span>
-                </div>
-                {/* Icon */}
-                <div className="flex-shrink-0">
-                  {getIcon(testimonial.icon)}
+                  {/* Icon */}
+                  <div className="flex-shrink-0">
+                    {getIcon(testimonial.icon)}
+                  </div>
                 </div>
               </div>
             </div>
