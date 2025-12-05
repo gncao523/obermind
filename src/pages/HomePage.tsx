@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import FinancialCards from '../components/FinancialCards'
 import MarketsSection from '../components/MarketsSection'
+import ChartSection from '../components/ChartSection'
 import TrustSection from '../components/TrustSection'
 
 const HomePage: React.FC = () => {
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
       <FinancialCards />
       <MarketsSection />
       <TrustSection />
+      <ChartSection />
     </div>
   )
 }
