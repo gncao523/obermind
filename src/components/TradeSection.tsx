@@ -62,11 +62,11 @@ const TradeSection: React.FC = () => {
                         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             <img src={mIndex} alt="market index" className="absolute top-0 left-0 z-0 w-full h-60 object-cover rounded-3xl" />
                             {/* Left Content */}
-                            <div className="relative top-16 left-28 z-10">
-                                <h3 className="text-2xl font-['Urbanist'] text-white mb-4 z-10">
+                            <div className="relative top-4 lg:top-16 left-2 lg:left-28 z-10">
+                                <h3 className="text-xl lg:text-2xl font-['Urbanist'] text-white mb-4 z-10">
                                     Premier Market - Market Cap Weighted PR (BKP)
                                 </h3>
-                                <p className="text-sm text-white mb-4 font-['UrbanistRegular']">
+                                <p className="text-xs lg:text-sm text-white mb-4 font-['UrbanistRegular']">
                                     Stay ahead of the latest tech trends with our algorithmically selected <br/> portfolio of the 15 top tech stocks each month.
                                 </p>
                                 <div className="flex flex-wrap gap-4">

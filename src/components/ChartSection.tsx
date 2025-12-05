@@ -68,7 +68,7 @@ const ChartSection: React.FC = () => {
                                 />
                                 
                                 {/* Timeframe Buttons - Vertical Array */}
-                                <div className="absolute right-4 top-16 flex flex-col gap-1">
+                                <div className="absolute right-0 lg:right-4 top-40 lg:top-16 flex flex-row sm:flex-col gap-1">
                                     {TIMEFRAMES.map((tf) => (
                                         <button
                                             key={tf}

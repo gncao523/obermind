@@ -4,20 +4,21 @@ import sectionBg from '../assets/images/premierbg.png'
 // Icon components
 const HeadphoneIcon: React.FC = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 1C8.13 1 5 4.13 5 8V14C5 15.66 6.34 17 8 17H9V10H8C7.45 10 7 9.55 7 9V8C7 4.69 9.69 2 13 2C16.31 2 19 4.69 19 8V9C19 9.55 18.55 10 18 10H17V17H18C19.66 17 21 15.66 21 14V8C21 4.13 17.87 1 14 1H12Z" fill="#FC1B1B"/>
+    <path d="M12 1C8.13 1 5 4.13 5 8V14C5 15.66 6.34 17 8 17H9V10H8C7.45 10 7 9.55 7 9V8C7 4.69 9.69 2 13 2C16.31 2 19 4.69 19 8V9C19 9.55 18.55 10 18 10H17V17H18C19.66 17 21 15.66 21 14V8C21 4.13 17.87 1 14 1H12Z" fill="#FC1B1B" />
   </svg>
 )
 
 const MailIcon: React.FC = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#FC1B1B"/>
+    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#FC1B1B" />
   </svg>
 )
 
 const GlobeIcon: React.FC = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 19.93C11.5 19.65 10.35 18.5 10.07 17H13V19.93ZM13 15H10.07C10.35 13.5 11.5 12.35 13 12.07V15ZM15 19.93V17H17.93C17.65 18.5 16.5 19.65 15 19.93ZM17.93 15H15V12.07C16.5 12.35 17.65 13.5 17.93 15ZM11 4.07C9.5 4.35 8.35 5.5 8.07 7H11V4.07ZM11 9H8.07C8.35 10.5 9.5 11.65 11 11.93V9ZM15 4.07V7H17.93C17.65 5.5 16.5 4.35 15 4.07ZM15 11.93C16.5 11.65 17.65 10.5 17.93 9H15V11.93ZM4 12C4 11.38 4.08 10.79 4.21 10.21L6.5 12.5V13.5C6.5 14.33 7.17 15 8 15H9.5V16.5C9.5 17.33 10.17 18 11 18H12.5V19.79C11.21 19.92 10.62 20 10 20C6.69 20 4 17.31 4 14V12ZM19.79 13.79C19.92 13.21 20 12.62 20 12C20 8.69 17.31 6 14 6C13.38 6 12.79 6.08 12.21 6.21L14.5 8.5V9.5C14.5 10.33 15.17 11 16 11H17.5V12.5C17.5 13.33 18.17 14 19 14H19.79V13.79Z" fill="#FC1B1B"/>
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 7.21997 17.4722 5.47991 16.4832 3.99987C15.4943 2.51983 14.0887 1.36628 12.4442 0.685088C10.7996 0.00389957 8.99002 -0.17433 7.24419 0.172936C5.49836 0.520203 3.89471 1.37737 2.63604 2.63604C1.37737 3.89471 0.520203 5.49836 0.172936 7.24419C-0.17433 8.99002 0.00389957 10.7996 0.685088 12.4442C1.36628 14.0887 2.51983 15.4943 3.99987 16.4832C5.47991 17.4722 7.21997 18 9 18H9.09375C11.455 17.9974 13.7189 17.0583 15.3886 15.3886C17.0583 13.7189 17.9974 11.455 18 9.09375V9.0465V9ZM16.5 9C16.4998 9.66739 16.4092 10.3317 16.2308 10.9748C16.2165 11.0265 16.1913 11.0746 16.1569 11.1158C16.1224 11.157 16.0795 11.1903 16.0311 11.2135C15.9827 11.2366 15.9299 11.2491 15.8762 11.2501C15.8225 11.2511 15.7693 11.2406 15.72 11.2193C15.2569 11.0188 14.8617 10.6885 14.5823 10.2683L12.9188 7.77225C12.7475 7.51547 12.5155 7.30492 12.2434 7.1593C11.9713 7.01368 11.6674 6.9375 11.3588 6.9375H11.034C10.487 6.9375 9.96239 6.7202 9.57559 6.33341C9.1888 5.94662 8.9715 5.42201 8.9715 4.875C8.9715 4.32799 9.1888 3.80339 9.57559 3.4166C9.96239 3.0298 10.487 2.8125 11.034 2.8125H13.113C13.1907 2.81251 13.2664 2.83662 13.3298 2.8815C14.3091 3.57338 15.1081 4.49013 15.6598 5.55479C16.2114 6.61945 16.4996 7.80092 16.5 9ZM1.63425 7.61625C1.65157 7.53142 1.6977 7.4552 1.76483 7.40052C1.83195 7.34583 1.91593 7.31606 2.0025 7.31625H5.25525C5.60012 7.31528 5.94176 7.38273 6.26038 7.51468C6.57901 7.64664 6.8683 7.84049 7.1115 8.085L7.95 8.925C8.42327 9.39851 8.69774 10.035 8.71726 10.7042C8.73678 11.3733 8.49987 12.0247 8.055 12.525L7.03575 13.6718C6.73061 14.0152 6.5622 14.4588 6.5625 14.9183V15.5385C6.56247 15.6008 6.54694 15.662 6.51732 15.7168C6.4877 15.7715 6.44491 15.818 6.39282 15.8521C6.34073 15.8862 6.28097 15.9068 6.21894 15.912C6.15691 15.9172 6.09456 15.9069 6.0375 15.882C4.69172 15.3034 3.54486 14.3433 2.7385 13.1203C1.93214 11.8973 1.50159 10.4649 1.5 9C1.50077 8.53554 1.54573 8.0722 1.63425 7.61625Z" fill="#ED1D25" />
   </svg>
+
 )
 
 interface Testimonial {
@@ -105,22 +106,22 @@ const PremierSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-['Gilroy'] text-black mb-4">
-            What <span className="text-[#FC1B1B]">Premier</span> Traders <br/> are saying about us
+            What <span className="text-[#FC1B1B]">Premier</span> Traders <br /> are saying about us
           </h2>
           <p className="text-base lg:text-lg text-[#737373] font-['UrbanistRegular'] mb-6">
-            Join a growing community of professionals who rely on our platform to<br/> trade smarter every day.
+            Join a growing community of professionals who rely on our platform to<br /> trade smarter every day.
           </p>
-          
+
           {/* Navigation Arrows */}
           <div className="flex justify-center gap-4">
             <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 9L4.5 6L7.5 3" stroke="#737373" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M7.5 9L4.5 6L7.5 3" stroke="#737373" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
             <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.5 9L7.5 6L4.5 3" stroke="#737373" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4.5 9L7.5 6L4.5 3" stroke="#737373" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>
@@ -135,7 +136,7 @@ const PremierSection: React.FC = () => {
             >
               <div className="bg-white rounded-2xl p-6 border border-[#FFC4C6]">
                 {/* Testimonial Text */}
-                <p 
+                <p
                   className="text-sm text-black mb-6 font-['UrbanistRegular'] leading-relaxed pb-6"
                   style={{
                     borderBottom: '1px solid',
@@ -144,7 +145,7 @@ const PremierSection: React.FC = () => {
                 >
                   {testimonial.text}
                 </p>
-                
+
                 {/* Customer Info */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
