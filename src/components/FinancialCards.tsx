@@ -1,15 +1,84 @@
 import React from 'react'
-import fcard1 from '../assets/images/fcard-1.png'
-import fcard2 from '../assets/images/fcard-2.png'
-import fcard3 from '../assets/images/fcard-3.png'
-import fcard4 from '../assets/images/fcard-4.png'
+import flag1 from '../assets/images/flag1.png'
+import frame from '../assets/images/Frame.png'
+import frame1 from '../assets/images/Frame (1).png'
+
+interface CurrencyCardProps {
+  currencyPair: string
+  rate: string
+  change: string
+  isPositive: boolean
+  flag1: string
+  trendIcon: string
+}
+
+const CurrencyCard: React.FC<CurrencyCardProps> = ({
+  currencyPair,
+  rate,
+  change,
+  isPositive,
+  flag1: flag1Img,
+  trendIcon,
+}) => {
+  return (
+    <div className="bg-white rounded-full shadow-md px-4 py-6 flex items-center justify-between">
+      <div className="flex items-center gap-1">
+        <div className="flex flex-col gap-1">
+          <img src={flag1Img} alt="Flag 1" className="w-10 h-6 object-contain" />
+        </div>
+        <div className="font-['InterBold'] text-lg uppercase">{currencyPair}</div>
+      </div>
+      <div className="flex items-center gap-2">
+        <img src={trendIcon} alt="Trend" className="w-12 h-8 object-contain mt-1" />
+        <div>
+          <div className="text-base font-['InterBold']">{rate}</div>
+          <div className={`font-['InterBold'] text-sm ${isPositive ? 'text-green-500' : 'text-red-500'}`}>
+            {change}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const FinancialCards: React.FC = () => {
   const cards = [
-    { id: 1, image: fcard1, alt: 'Financial Card 1' },
-    { id: 2, image: fcard2, alt: 'Financial Card 2' },
-    { id: 3, image: fcard3, alt: 'Financial Card 3' },
-    { id: 4, image: fcard4, alt: 'Financial Card 4' },
+    {
+      id: 1,
+      currencyPair: 'USD/EUR',
+      rate: '0.00014',
+      change: '-234.45',
+      isPositive: false,
+      flag1,
+      trendIcon: frame,
+    },
+    {
+      id: 2,
+      currencyPair: 'GBP/USD',
+      rate: '1.25432',
+      change: '+125.30',
+      isPositive: true,
+      flag1,
+      trendIcon: frame1,
+    },
+    {
+      id: 3,
+      currencyPair: 'EUR/JPY',
+      rate: '165.432',
+      change: '-45.67',
+      isPositive: false,
+      flag1,
+      trendIcon: frame,
+    },
+    {
+      id: 4,
+      currencyPair: 'AUD/USD',
+      rate: '0.67890',
+      change: '+89.12',
+      isPositive: true,
+      flag1,
+      trendIcon: frame1,
+    },
   ]
 
   return (
@@ -17,15 +86,15 @@ const FinancialCards: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card) => (
-            <div
+            <CurrencyCard
               key={card.id}
-            >
-              <img
-                src={card.image}
-                alt={card.alt}
-                className="w-full h-auto object-contain"
-              />
-            </div>
+              currencyPair={card.currencyPair}
+              rate={card.rate}
+              change={card.change}
+              isPositive={card.isPositive}
+              flag1={card.flag1}
+              trendIcon={card.trendIcon}
+            />
           ))}
         </div>
       </div>

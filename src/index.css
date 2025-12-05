@@ -40,6 +40,14 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'InterBold';
+  src: url('./assets/fonts/Inter-Bold.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
 @layer base {
   * {
     @apply box-border;
