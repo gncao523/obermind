@@ -10,6 +10,7 @@ import TrustSection from '../components/TrustSection'
 import TradeSection from '../components/TradeSection'
 import PremierSection from '../components/PremierSection'
 import GetStartedSection from '../components/GetStartedSection'
+import Footer from '../components/Footer'
 
 const HomePage: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage: React.FC = () => {
       <TradeSection />
       <PremierSection />
       <GetStartedSection />
+      <Footer />
     </div>
   )
 }
