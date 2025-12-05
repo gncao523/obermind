@@ -21,8 +21,8 @@ const WithdrawSection: React.FC = () => {
                 <div className="relative w-full flex items-center justify-between">
                     <div className="relative w-full rounded-3xl" >
                         <img src={withdrawImage} alt="withdraw" className="absolute rounded-3xl top-0 left-0 w-full h-full object-cover z-0" />
-                        <div className="relative z-10 px-24 py-16">
-                            <div className="w-[35%] flex gap-4 my-6 cursor-pointer hover:bg-white rounded-2xl p-4">
+                        <div className="relative z-10 px-2 sm:px-24 py-2 sm:py-16">
+                            <div className="w-full sm:w-[35%] flex gap-4 my-6 cursor-pointer hover:bg-white rounded-2xl p-4">
                                 <img src={w1} alt="withdraw" className="w-12 h-12 object-cover" />
                                 <div>
                                     <h3 className="text-xl font-['Gilroy'] text-[#151515]">
@@ -33,7 +33,7 @@ const WithdrawSection: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="w-[35%] flex gap-4 my-6 cursor-pointer hover:bg-white rounded-2xl p-4">
+                            <div className="w-full sm:w-[35%] flex gap-4 my-6 cursor-pointer hover:bg-white rounded-2xl p-4">
                                 <img src={w2} alt="withdraw" className="w-12 h-12 object-cover" />
                                 <div>
                                     <h3 className="text-xl font-['Gilroy'] text-[#151515]">
@@ -44,7 +44,7 @@ const WithdrawSection: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="w-[35%] flex gap-4 my-6 cursor-pointer hover:bg-white rounded-2xl p-4">
+                            <div className="w-full sm:w-[35%] flex gap-4 my-6 cursor-pointer hover:bg-white rounded-2xl p-4">
                                 <img src={w3} alt="withdraw" className="w-12 h-12 object-cover" />
                                 <div>
                                     <h3 className="text-xl font-['Gilroy'] text-[#151515]">
