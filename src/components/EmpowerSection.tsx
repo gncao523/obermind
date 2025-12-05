@@ -7,7 +7,7 @@ import empowerCard4 from '../assets/images/empower4.png'
 
 const EmpowerSection: React.FC = () => {
     return (
-        <section className="relative py-20 px-8 bg-[#0a0a0a] overflow-hidden">
+        <section className="relative py-20 px-8 overflow-hidden">
             <img src={empowerImage} alt="empower" className="absolute top-0 left-0 w-full h-full object-cover z-0" />
 
             <div className="max-w-7xl mx-auto relative z-10">
